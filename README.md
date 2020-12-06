@@ -7,7 +7,7 @@ Ansible is a great tool for Configuration Management & Automation. This Task was
 ▪️ ARTH Task-11.1\
 🔰 Write an Ansible PlayBook that does the following operations in the managed nodes:\
 🔹 Configures NameNode\
-🔹 Configure DataNode\
+🔹 & one to Configure DataNode\
 Therefore, you can configure whole Hadoop Cluster using these codes using just 2 commands. Here, I have created two Host Groups named: namenode & datanode. So, to configure multiple OS as DataNode, just add there IP's under datanode Host group, similarly for NameNode as well. 
 
 Hope you guys liked it and learned something new. Thankyou, I'll meet you in the next one. 😊
