@@ -4,7 +4,7 @@ I've created two Ansible Playbooks for Configuring both NameNode & DataNode in a
 
 Ansible is a great tool for Configuration Management & Automation. This Task was given by Sir Vimal Daga in the Arth training recently.
 
-## ARTH Task-11.1\
+## ARTH Task-11.1
 🔰 Write an Ansible PlayBook that does the following operations in the managed nodes:\
 🔹 Configures NameNode\
 🔹 & one to Configure DataNode\
