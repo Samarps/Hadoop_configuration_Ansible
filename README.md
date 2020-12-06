@@ -6,7 +6,7 @@ Ansible is a great tool for Configuration Management & Automation. This Task was
 ▪️ ARTH Task-11.1\
 🔰 Write an Ansible PlayBook that does the following operations in the managed nodes:\
 🔹 Configures NameNode\
-🔹 Configure DataNode\
-- therefore, you can configure whole Hadoop Cluster using these codes using just 2 commands.\
+🔹 Configure DataNode
+Therefore, you can configure whole Hadoop Cluster using these codes using just 2 commands.
 
 Hope you guys liked it and learned something new. Thankyou, I'll meet you in the next one. 😊
