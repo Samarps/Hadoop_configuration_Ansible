@@ -1,0 +1,51 @@
+- hosts: namenode
+  vars:
+          - node: "name"
+          - nn_ip: "0.0.0.0"
+  vars_prompt:
+          - name: dir_hadoop
+            prompt: "Enter NameNode Directory"
+            private: no
+  tasks:
+  - name: "Copying jdk software"
+    copy:
+            src: "/root/jdk-8u171-linux-x64.rpm"
+            dest: "/root/jdk.rpm"
+
+  - name: "Copying hadoop software"
+    copy:
+            src: "/root/hadoop-1.2.1-1.x86_64.rpm"
+            dest: "/root/hadoop.rpm"
+  
+  - name: "Installing jdk software"
+    yum:
+            name: "/root/jdk.rpm"
+            state: present
+            disable_gpg_check: yes
+  
+  - name: "Installing Hadoop software"
+    command:
+            cmd: "rpm -ivh hadoop.rpm --force"
+
+  - name: "Create directory for namenode"
+    file:
+            path: "{{ dir_hadoop }}"
+            state: directory
+
+  - name: "Configuring hdfs-site.xml file"
+    template:
+            src: "requirements/hdfsfile.j2"
+            dest: "/etc/hadoop/hdfs-site.xml"
+
+  - name: "Configuring core-site.xml file"
+    template:
+            src: "requirements/corefile.j2"
+            dest: "/etc/hadoop/core-site.xml"
+
+  - name: "Formatting namenode directory"
+    command: "echo y | hadoop namenode -format"
+
+  - name: "Starting namenode services"
+    command: "hadoop-daemon.sh start namenode"
+    ignore_errors: yes
+
