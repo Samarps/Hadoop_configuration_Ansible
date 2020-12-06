@@ -1,3 +1,0 @@
-Required Softwares: jdk & Apache Hadoop
-
-To complete requirements for configuring Hadoop cluster, you need to get above softwares in this folder. For this just execute the Ansible Playbook named "complete_requirements.yml" firstly.
