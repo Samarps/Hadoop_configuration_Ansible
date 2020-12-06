@@ -11,12 +11,12 @@
   tasks:
   - name: "Copying jdk software"
     copy:
-            src: "/root/jdk-8u171-linux-x64.rpm"
+            src: "/root/softwares/jdk-8u171-linux-x64.rpm"
             dest: "/root/jdk.rpm"
 
   - name: "Copying hadoop software"
     copy:
-            src: "/root/hadoop-1.2.1-1.x86_64.rpm"
+            src: "/root/softwares/hadoop-1.2.1-1.x86_64.rpm"
             dest: "/root/hadoop.rpm"
   
   - name: "Installing jdk software"

@@ -1,0 +1,12 @@
+- hosts: localhost
+  tasks:
+  - name: "Installing gdown package"
+    pip:
+            name: gdown
+
+  - name: "Getting JDK software"
+    command: "cd requirements/softwares/ && gdown --id 1ilqY9Yj-doBCO4jktWD2rOuYpKHLIti5"
+
+  - name: "Getting Hadoop software"
+    command: "cd requirements/softwares/ && gdown --id 1LkQ5J_EnfC1P0jelIvkmslraHhwKnN_m"
+
