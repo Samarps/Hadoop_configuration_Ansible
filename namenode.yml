@@ -7,7 +7,7 @@
             prompt: "Enter NameNode Directory"
             private: no
   tasks:
-  - name: "Copying jdk software"
+  - name: "Copying JDK software"
     copy:
             src: "requirements/softwares/jdk-8u171-linux-x64.rpm"
             dest: "/root/jdk.rpm"
