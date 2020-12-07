@@ -49,4 +49,3 @@
   - name: "Starting DataNode services"
     command: "hadoop-daemon.sh start datanode"
     ignore_errors: yes
-
