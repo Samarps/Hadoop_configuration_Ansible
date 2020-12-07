@@ -1,5 +1,9 @@
 - hosts: localhost
   tasks:
+  - name: "Installing Python3"
+    package:
+            name: python3
+
   - name: "Installing gdown package"
     pip:
             name: gdown
