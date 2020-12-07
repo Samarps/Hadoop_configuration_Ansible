@@ -1,6 +1,6 @@
 # Hadoop_configuration_Ansible
 
-I've created two Ansible Playbooks for Configuring both NameNode & DataNode in a Hadoop cluster.\
+I've created two Ansible Playbooks for Configuring both NameNode & DataNode in a Hadoop cluster.
 
 Ansible is a great tool for Configuration Management & Automation. This Task was given by Sir Vimal Daga in the Arth training recently.
 
