@@ -12,21 +12,21 @@
   - name: "Copying jdk software"
     copy:
             src: "requirements/softwares/jdk-8u171-linux-x64.rpm"
-            dest: "/root/jdk.rpm"
+            dest: "/root/"
 
   - name: "Copying hadoop software"
     copy:
             src: "requirements/softwares/hadoop-1.2.1-1.x86_64.rpm"
-            dest: "/root/hadoop.rpm"
+            dest: "/root/"
   
   - name: "Installing jdk software"
     yum:
-            name: "/root/jdk.rpm"
+            name: "/root/jdk-8u171-linux-x64.rpm"
             state: present
             disable_gpg_check: yes
   
   - name: "Installing Hadoop software"
-    command: "rpm -ivh hadoop.rpm --force"
+    command: "rpm -ivh hadoop-1.2.1-1.x86_64.rpm --force"
 
   - name: "Create directory for DataNode"
     file:
