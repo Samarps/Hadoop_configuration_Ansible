@@ -43,6 +43,9 @@
             src: "requirements/corefile.j2"
             dest: "/etc/hadoop/core-site.xml"
 
+  - name: "Clearing some memory"
+    shell: "echo 3 > /proc/sys/vm/drop_caches"
+ 
   - name: "Starting DataNode services"
     command: "hadoop-daemon.sh start datanode"
     ignore_errors: yes

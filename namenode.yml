@@ -45,7 +45,13 @@
   - name: "Formatting namenode directory"
     command: "echo y | hadoop namenode -format"
 
+  - name: "Clearing some memory"
+    shell: "echo 3 > /proc/sys/vm/drop_caches"
+    
   - name: "Starting namenode services"
     command: "hadoop-daemon.sh start namenode"
     ignore_errors: yes
 
+  - name: "Clearing some memory"
+    shell: "echo 3 > /proc/sys/vm/drop_caches"
+ 
