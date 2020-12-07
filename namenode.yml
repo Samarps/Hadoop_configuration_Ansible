@@ -43,7 +43,7 @@
             dest: "/etc/hadoop/core-site.xml"
 
   - name: "Formatting namenode directory"
-    command: "echo Y | hadoop namenode -format"
+    shell: "echo Y | hadoop namenode -format"
 
   - name: "Clearing some memory"
     shell: "echo 3 > /proc/sys/vm/drop_caches"
