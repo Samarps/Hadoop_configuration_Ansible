@@ -9,4 +9,3 @@
 
   - name: "Getting Hadoop software"
     shell: "cd requirements/softwares/ && gdown --id 1LkQ5J_EnfC1P0jelIvkmslraHhwKnN_m"
-
