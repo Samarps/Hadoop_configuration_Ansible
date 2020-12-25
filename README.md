@@ -10,6 +10,9 @@ Ansible is a great tool for Configuration Management & Automation. This Task was
 🔹 & one to Configure DataNode\
 Therefore, you can configure whole Hadoop Cluster using these codes using just 2 commands. Here, I have created two Host Groups named: namenode & datanode. So, to configure multiple OS as DataNode, just add there IP's under datanode Host group, similarly for NameNode as well. 
 
+- I've demonstrated how to use this code & discussed some other details in this video which I posted on Linkedin. You can watch this to know more:
+https://www.linkedin.com/posts/samar-pratap-singh-7788sps_vimaldaga-righteducation-educationredefine-activity-6747203371968577536-00Np
+
 ###### NOTE:
 - Required Softwares: jdk & Apache Hadoop
 - To complete requirements for configuring Hadoop cluster, you need to get above softwares in this directory: "requirements/softwares/"
