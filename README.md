@@ -1,4 +1,4 @@
-# Hadoop_configuration_Ansible
+# Hadoop configuration using Ansible
 
 I've created two Ansible Playbooks for Configuring both NameNode & DataNode in a Hadoop cluster.
 
